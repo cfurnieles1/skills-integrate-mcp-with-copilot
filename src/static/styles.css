@@ -57,6 +57,34 @@ section h3 {
   color: #1a237e;
 }
 
+.filters-container {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 720px) {
+  .filters-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
